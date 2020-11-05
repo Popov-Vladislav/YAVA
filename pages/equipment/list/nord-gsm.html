@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/css/uikit.min.css" />
+    <script src="https://kit.fontawesome.com/5a5318a547.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../../style.css">
+    <title>ЧОО ЯВА</title>
+</head>
+
+<body>
+    <div class="" id="container">
+        <header class="header uk-margin-top">
+            <nav class="uk-navbar-container uk-container" uk-navbar>
+                <div class="uk-navbar-left">
+                    <div class="uk-logo uk-logo__header">
+                        <a href="/"><img src="../../../img/logo.svg" alt="logo"></a>
+                    </div>
+                    <ul class="uk-navbar-nav">
+                        <li class="uk-active"><a href="">Услуги</a></li>
+                        <li class="uk-parent"><a href="">Объекты</a></li>
+                        <li class="uk-parent"><a href="">Оборудование</a></li>
+                        <li class="uk-parent"><a href="">О компании</a></li>
+                        <li class="uk-parent"><a href="">Новости</a></li>
+                        <li class="uk-parent"><a href="">Контакты</a></li>
+                    </ul>
+                    <div class="uk-navbar-buttons">
+                        <a class="uk-button uk-button-default uk-button-phone" href="/">8 (343) 380 60 40</a>
+                    </div>
+                </div>
+            </nav>
+            <div class="drop-box-header">
+            <div class="nav-box uk-margin-small-top drop-box-list">
+                <nav class="uk-navbar-container uk-container" uk-navbar='delay-hide:1'>
+                    <div class="uk-navbar-left">
+                        <ul class="uk-navbar-nav uk-navbar-nav-dropdown">
+                            <li>
+                                <a href="#">Защита для дома <span uk-icon="icon:chevron-down; ratio: 1.2"></span></a>
+                                <div class="uk-navbar-dropdown uk-navbar-dropdown-list">
+                                    <ul class="uk-nav uk-navbar-dropdown-nav drop-box-ul">
+                                        <li class="uk-active">
+                                            <a href="#">Охранная сигнализация</a>
+                                            <a href="#">Охрана общественного порядка при проведении массовых мероприятий</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Системы пожарной сигнализации и пожаротушения</a>
+                                            <a href="#">Юридические услуги</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Системы видеонаблюдения</a>
+                                            <a href="#">Пультовая охрана объектов</a>
+                                        </li>
+                                        <li><a href="#">Физическая охрана (вооруженная/невооруженная)</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">Защита для бизнеса<span uk-icon="icon:chevron-down; ratio: 1.2"></span></a>
+                                <div class="uk-navbar-dropdown uk-navbar-dropdown-list">
+                                    <ul class="uk-nav uk-navbar-dropdown-nav drop-box-ul drop-box-ul_center">
+                                        <li class="uk-active">
+                                            <a href="#">Охранная сигнализация</a>
+                                            <a href="#">Охрана общественного порядка при проведении массовых мероприятий</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Системы пожарной сигнализации и пожаротушения</a>
+                                            <a href="#">Юридические услуги</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Системы видеонаблюдения</a>
+                                            <a href="#">Пультовая охрана объектов</a>
+                                        </li>
+                                        <li><a href="#">Физическая охрана (вооруженная/невооруженная)</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">Монтаж средств охраны<span uk-icon="icon:chevron-down; ratio: 1.2"></span></a>
+                                <div class="uk-navbar-dropdown uk-navbar-dropdown-list">
+                                    <ul class="uk-nav uk-navbar-dropdown-nav drop-box-ul drop-box-ul_right">
+                                        <li class="uk-active">
+                                            <a href="#">Охранная сигнализация</a>
+                                            <a href="#">Охрана общественного порядка при проведении массовых мероприятий</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Системы пожарной сигнализации и пожаротушения</a>
+                                            <a href="#">Юридические услуги</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Системы видеонаблюдения</a>
+                                            <a href="#">Пультовая охрана объектов</a>
+                                        </li>
+                                        <li><a href="#">Физическая охрана (вооруженная/невооруженная)</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="drop-list-back"></div>
+            </div>
+        </header>
+        <div id="modal-center" class="uk-flex-top" uk-modal>
+            <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+                <button class="uk-modal-close-default" type="button" uk-close></button>
+                <h3 class="uk-modal-title">Заказать звонок</h3>
+                <div class="uk-modal-sub-title">Оставьте ваши контактные данные<br>и наш представитель свяжется с вами в течении 10 минут</div>
+                <form class="promo-form modal-form">
+                    <input type="text" placeholder="Как Вас зовут?">
+                    <input type="text" placeholder="Ваш телефон">
+                    <div class="js-upload" uk-form-custom>
+                        <input type="file" multiple>
+                        <button class="uk-button-upload" type="button" tabindex="-1">
+                            <i class="fas fa-paperclip"></i> Прикрепить файл
+                        </button>
+                    </div>
+                    <a class="uk-button uk-button-default uk-button-request uk-margin-medium-top uk-button-dark" href="/">
+                        Отправить
+                    </a>
+                </form>
+                <div class="modal-footer">Нажимая на кнопку, вы соглашаетесь с <a href="#">Политикой обработки персональных данных</a></div>
+            </div>
+        </div>
+        <div class="uk-container crumbs-container">
+            <div class="crumbs">
+                <li class="uk-li"><a href="../../../index.html">Главная</a></li>
+                <i class="fas fa-chevron-right"></i>
+                <li class="uk-li"><a href="../equipment.html">Оборудование</a></li>
+                <i class="fas fa-chevron-right"></i>
+                <li class="uk-active"><a href="nord-gsm.html">Норд GSM</a></li>
+            </div>
+        </div>
+        <div class="uk-container padding-bottom">
+            <div class="promo-header">
+                <h2 class="promo-h2">Норд GSM</h2>
+            </div>
+            <div class="promo-body big-card-body">
+                <div class="object-big-slider object-big-slider-medium" uk-slider="finite: true">
+                    <img src="../../../img/equipmentBig1.png" alt="equipmentBig">
+                    <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin uk-dotnav-img"></ul>
+                    <p class="uk-text">
+                        Контрольная панель со встроенным GSM-модулем (GPRS/CSD/Voice) c двумя сим-картами.
+                        8 охранных проводных шлейфов. Встроенный тампер, антенна. Управление с клавиатуры,
+                        ТМ-считывателя. Поставляется в пластиковом корпусе и источником питания от сети 220 В.
+                        Дополнительно оснащается адаптером Ethernet. АКБ и адаптер Ethernet продаются отдельно.
+                    </p>
+                </div>
+                <div class="card-big-sub-content">
+                    <div class="equipment-footer">
+                        <div class="equipment-footer-item">
+                            <p class="equipment-footer-title">Цена</p>
+                            <div class="hr"></div>
+                            <p class="equipment-footer-text">3999 ₽</p>
+                        </div>
+                        <div class="equipment-footer-item">
+                            <p class="equipment-footer-title">Гарантия</p>
+                            <div class="hr"></div>
+                            <p class="equipment-footer-text">3 года</p>
+                        </div>
+                    </div>
+                    <a class="uk-button uk-button-default uk-button-request uk-button-equipment" href="#modal-center" uk-toggle>
+                        Заказать
+                    </a>
+                    <ul class="ul-two-color">
+                        <li>
+                            <p class="uk-text">
+                                Дистанционное управление:<span> поддержка до 5 пультов ДУ</span>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="uk-text">
+                                Уровень громкости сигнала тревоги:<span> 110 дБ</span>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="uk-text">
+                                Звонок при срабатывании:<span> на 6 телефонных номеров</span>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="uk-text">
+                                Сообщение при срабатывании:<span> на 2 телефонных номера</span>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="uk-text">
+                                Запись голосового сообщения:<span> до 10 секунд</span>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+        <div class="uk-container padding-bottom">
+            <div class="promo-header">
+                <h2 class="promo-h2">Похожие товары</h2>
+            </div>
+            <div class="promo-body big-card-body">
+                <div class="uk-card-ul">
+                    <a href="#" class="uk-card uk-card-default uk-card-mini">
+                        <div class="uk-card-media-top">
+                            <img src="../../../img/equipment-card-1.png" alt="equipment">
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Норд GSM</h3>
+                            <p class="ul-card-text">
+                                Контрольная панель со встроенным GSM-модулем (GPRS/CSD/Voice) c двумя сим-картами.модулем
+                            </p>
+                            <p class="uk-card-price">3999 ₽</p>
+                        </div>
+                    </a>
+                    <a href="#" class="uk-card uk-card-default uk-card-mini">
+                        <div class="uk-card-media-top">
+                            <img src="../../../img/equipment-card-2.png" alt="equipment">
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Телефонный роутер в серверном корпусе</h3>
+                            <p class="ul-card-text">
+                                Предназначен для подключения телефонной сети ПЦН
+                            </p>
+                            <p class="uk-card-price">9700 ₽</p>
+                        </div>
+                    </a>
+                    <a href="#" class="uk-card uk-card-default uk-card-mini">
+                        <div class="uk-card-media-top">
+                            <img src="../../../img/equipment-card-3.png" alt="equipment">
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Норд GSM металлический корпус</h3>
+                            <p class="ul-card-text">
+                                Контрольная панель со встроенным GSM-модулем (GPRS/CSD/Voice) c двумя сим-картами.модулем
+                            </p>
+                            <p class="uk-card-price">5234 ₽</p>
+                        </div>
+                    </a>
+                    <a href="#" class="uk-card uk-card-default uk-card-mini">
+                        <div class="uk-card-media-top">
+                            <img src="../../../img/equipment-card-4.png" alt="equipment">
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Плата Hunter-Pro 896</h3>
+                            <p class="ul-card-text">
+                                Плата контрольной панели Hunter-Pro 89
+                            </p>
+                            <p class="uk-card-price">7777 ₽</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+        <div class="promo promo-dark">
+            <div class="uk-container">
+                <div class="promo-header promo-dark-header">
+                    <h2 class="promo-h2 promo-dark-h2">Заказать обратный звонок</h2>
+                </div>
+                <p class="promo-dark-sub-title">
+                    Оставьте ваши контактные данные<br> 
+                    и наш представитель свяжется с вами в течении 10 минут
+                </p>
+                <form class="promo-form">
+                    <input type="text" placeholder="Как Вас зовут?">
+                    <input type="text" placeholder="Ваш телефон">
+                    <a class="uk-button uk-button-default uk-button-request uk-button-dark" href="/">
+                        Отправить
+                    </a>
+                </form>
+                <p class="promo-dark-footer">
+                    Нажимая на кнопку, вы соглашаетесь с Политикой обработки персональных данных
+                </p>
+            </div>
+        </div>
+        <div>
+        <footer class="footer">
+            <nav class="uk-navbar-container uk-container footer-nav" uk-navbar>
+                <div class="uk-navbar-left">
+                    <div class="uk-logo uk-logo__header">
+                        <a href="/"><img src="../../../img/logo.svg" alt="logo"></a>
+                    </div>
+                    <div>
+                        <ul class="uk-navbar-nav uk-navbar-nav-footer">
+                            <li class="uk-active"><a href="">Услуги</a></li>
+                            <li class="uk-parent"><a href="">Объекты</a></li>
+                            <li class="uk-parent"><a href="">Оборудование</a></li>
+                            <li class="uk-parent"><a href="">О компании</a></li>
+                            <li class="uk-parent"><a href="">Новости</a></li>
+                            <li class="uk-parent"><a href="">Контакты</a></li>
+                        </ul>
+                        <a href="#" class="uk-navbar-p">Политика конфиденциальности</a>
+                    </div>
+                    <div class="uk-navbar-buttons">
+                        <a class="uk-button uk-button-default uk-button-request uk-button-turned-out uk-button-phone" href="/">8 (343) 380 60 40</a>
+                        <div class="social-pagination">
+                            <a class="uk-button uk-button-default uk-button-request uk-button-turned-out uk-button-icon uk-button-icon-left" 
+                            href="/">
+                            <i class="fab fa-whatsapp"></i>
+                            </a>
+                            <a class="uk-button uk-button-default uk-button-request uk-button-turned-out uk-button-icon uk-button-icon-left" 
+                            href="/">
+                            <i class="fab fa-vk"></i>
+                            </a>
+                            <a class="uk-button uk-button-default uk-button-request uk-button-turned-out uk-button-icon uk-button-icon-left" 
+                            href="/">
+                            <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer-buttom-text">
+                        <p>ЧОО ЯВА © 2020 Все права защищены.</p>
+                        <p>Разработка и поддержка <a href="#">Ситис</a></p>
+                    </div>
+                </div>
+            </nav>
+        </footer>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/js/uikit-icons.min.js"></script>
+    <script src="uikit/dist/js/uikit-icons.min.js"></script>
+</body>
+</html>
