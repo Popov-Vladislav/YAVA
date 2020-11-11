@@ -106,7 +106,7 @@
         <div id="modal-center" class="uk-flex-top" uk-modal>
             <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
                 <button class="uk-modal-close-default" type="button" uk-close></button>
-                <h3 class="uk-modal-title">Заказать звонок</h3>
+                <h3 class="uk-modal-title">Рассчитать стоимость проекта</h3>
                 <div class="uk-modal-sub-title">Оставьте ваши контактные данные<br>и наш представитель свяжется с вами в течении 10 минут</div>
                 <form class="promo-form modal-form">
                     <input type="text" placeholder="Как Вас зовут?">
@@ -135,17 +135,20 @@
                 <li class="uk-active"><a href="">Системы видеонаблюдения</a></li>
             </div>
         </div>
-        <div class="uk-container">
+        <div class="uk-container uk-container-services">
             <img src="../../../img/CCTVImg.png" alt="CCTVImg" class="promo-header-img">
             <div class="promo-header">
                 <h2 class="promo-h2">Системы видеонаблюдения</h2>
-                <a class="uk-button uk-button-default uk-button-request" href="#modal-center" uk-toggle>
+                <a class="uk-button uk-button-default uk-button-request desktop" href="#modal-center" uk-toggle>
                     Рассчитать стоимость проекта
                 </a>
                 <p class="uk-text uk-text-header">
                     Наши инженеры привозят камеры, расходные материалы и необходимое для монтажа оборудование. 
                     Устанавливают камеры, подключают все оборудование. Тестируют и настраивают так, как Вам необходимо.
                 </p>
+                <a class="uk-button uk-button-default uk-button-request uk-button-request-services mobile" href="#modal-center" uk-toggle>
+                    Рассчитать стоимость услуги
+                </a>
             </div>
             <div class="promo-body">
                 <div class="promo-body-title">
@@ -186,46 +189,63 @@
             <div class="promo-body">              
                 <div class="uk-margin">
                     <div>
-                        <div class="switcher-ul">
-                            <div class="switcher-item">
-                                <div class="uk-inline-clip uk-transition-toggle">
-                                    <img class="switcher-img" src="../../../img/services-1.png" alt="services">
-                                    <div class="uk-transition-fade uk-position-cover switcher-img-hover uk-flex uk-flex-center uk-flex-middle">
-                                        <p class="switcher-img-hover-p">Подробнее</p>
-                                    </div>
-                                </div>
-                                <p class="switcher-p">Охранная сигнализация</p>
-                            </div>
-                            <div class="switcher-item">
-                                <div class="uk-inline-clip uk-transition-toggle">
-                                    <img class="switcher-img" src="../../../img/services-2.png" alt="services">
-                                    <div class="uk-transition-fade uk-position-cover switcher-img-hover uk-flex uk-flex-center uk-flex-middle">
-                                        <p class="switcher-img-hover-p">Подробнее</p>
-                                    </div>
-                                </div>
-                                <p class="switcher-p">Системы пожарной<br> сигнализации и пожаротушения</p>
-                            </div>
-                            <div class="switcher-item">
-                                <div class="uk-inline-clip uk-transition-toggle">
-                                    <img class="switcher-img" src="../../../img/services-7.png" alt="services">
-                                    <div class="uk-transition-fade uk-position-cover switcher-img-hover uk-flex uk-flex-center uk-flex-middle">
-                                        <p class="switcher-img-hover-p">Подробнее</p>
-                                    </div>
-                                </div>
-                                <p class="switcher-p">Пультовая охрана объектов</p>
-                            </div>
-                            <div class="switcher-item">
-                                <div class="uk-inline-clip uk-transition-toggle">
-                                    <img class="switcher-img" src="../../../img/services-4.png" alt="services">
-                                    <div class="uk-transition-fade uk-position-cover switcher-img-hover uk-flex uk-flex-center uk-flex-middle">
-                                        <p class="switcher-img-hover-p">Подробнее</p>
-                                    </div>
-                                </div>
-                                <p class="switcher-p">Физическая охрана<br> (вооруженная/невооруженная)</p>
-                            </div>
-
-                            <div class="switcher-item">
-                            </div>
+                        <div uk-slider='finite: true;'>
+                            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+                                <ul class="uk-slider-items uk-child-width-1-4@s uk-child-width-1-1@m uk-child-width-1-1 uk-grid slider-licenses">
+                                    <li>
+                                        <div uk-lightbox>
+                                            <div class="switcher-item">
+                                                <div class="uk-inline-clip uk-transition-toggle">
+                                                    <img class="switcher-img" src="../../../img/services-1.png" alt="services">
+                                                    <div class="uk-transition-fade uk-position-cover switcher-img-hover uk-flex uk-flex-center uk-flex-middle">
+                                                        <p class="switcher-img-hover-p">Подробнее</p>
+                                                    </div>
+                                                </div>
+                                                <p class="switcher-p">Пультовая охрана объектов</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div uk-lightbox>
+                                            <div class="switcher-item">
+                                                <div class="uk-inline-clip uk-transition-toggle">
+                                                    <img class="switcher-img" src="../../../img/services-2.png" alt="services">
+                                                    <div class="uk-transition-fade uk-position-cover switcher-img-hover uk-flex uk-flex-center uk-flex-middle">
+                                                        <p class="switcher-img-hover-p">Подробнее</p>
+                                                    </div>
+                                                </div>
+                                                <p class="switcher-p">Пультовая охрана объектов</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div uk-lightbox>
+                                            <div class="switcher-item">
+                                                <div class="uk-inline-clip uk-transition-toggle">
+                                                    <img class="switcher-img" src="../../../img/services-3.png" alt="services">
+                                                    <div class="uk-transition-fade uk-position-cover switcher-img-hover uk-flex uk-flex-center uk-flex-middle">
+                                                        <p class="switcher-img-hover-p">Подробнее</p>
+                                                    </div>
+                                                </div>
+                                                <p class="switcher-p">Пультовая охрана объектов</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div uk-lightbox>
+                                            <div class="switcher-item">
+                                                <div class="uk-inline-clip uk-transition-toggle">
+                                                    <img class="switcher-img" src="../../../img/services-4.png" alt="services">
+                                                    <div class="uk-transition-fade uk-position-cover switcher-img-hover uk-flex uk-flex-center uk-flex-middle">
+                                                        <p class="switcher-img-hover-p">Подробнее</p>
+                                                    </div>
+                                                </div>
+                                                <p class="switcher-p">Пультовая охрана объектов</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>                    
                         </div>
                     </div>
                 </div>
