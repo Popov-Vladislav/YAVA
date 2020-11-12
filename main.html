@@ -36,7 +36,7 @@
                         <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
                             <div class="uk-offcanvas-bar uk-offcanvas-bar-mob">
                                 <div class="uk-offcanvas-bar-content">
-                                    <a href="#">Защита для дома <span uk-icon="icon:chevron-right; ratio: 1.2"></span></a>
+                                    <a href="#" uk-toggle="target: #offcanvas-nav">Защита для дома<span uk-icon="icon:chevron-right; ratio: 1.2"></span></a>
                                     <a href="#">Защита для бизнеса <span uk-icon="icon:chevron-right; ratio: 1.2"></span></a>
                                     <a href="#">Монтаж средств охраны <span uk-icon="icon:chevron-right; ratio: 1.2"></span></a>
                                     <ul class="uk-navbar">
@@ -46,6 +46,23 @@
                                         <li class="uk-parent"><a href="./pages/company/vacancies/vacancies.html">О компании</a></li>
                                         <li class="uk-parent"><a href="">Новости</a></li>
                                         <li class="uk-parent"><a href="./pages/contacts/contacts.html">Контакты</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="offcanvas-nav" uk-offcanvas="flip: true; overlay: true">
+                            <div class="uk-offcanvas-bar uk-offcanvas-bar-mob">
+                                <div class="uk-offcanvas-bar-content">
+                                    <a class="menu-mob-back" href="#" uk-toggle="target: #offcanvas-flip"><span uk-icon="icon:chevron-left; ratio: 1.2"></span>Назад</a>
+                                    <p class="menu-mob-sub-menu-title">Защита для дома</p>
+                                    <ul class="uk-navbar">
+                                        <li class="uk-parent"><a href="">Охранная сигнализация</a></li>
+                                        <li class="uk-parent"><a href="">Охрана общественного порядка при проведении массовых мероприятий</a></li>
+                                        <li class="uk-parent"><a href="">Системы пожарной сигнализации и пожаротушения</a></li>
+                                        <li class="uk-parent"><a href="">Юридические</a></li>
+                                        <li class="uk-parent"><a href="">Системы видеонаблюдения</a></li>
+                                        <li class="uk-parent"><a href="">Пультовая охрана объектов</a></li>
+                                        <li class="uk-parent"><a href="">Физическая охрана (вооруженная/невооруженная)</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -1294,5 +1311,6 @@
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/js/uikit-icons.min.js"></script>
     <script src="uikit/dist/js/uikit-icons.min.js"></script>
+    <script src='./script.js'></script>
 </body>
 </html>

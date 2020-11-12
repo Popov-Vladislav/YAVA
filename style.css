@@ -1523,4 +1523,20 @@ video {
   .promo-header-vacancies-item .promo-h2 {
     margin-bottom: 16px;
   }
+  .menu-mob-sub-menu-title {
+    color: #A10E20;
+    padding: 0 20px;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .uk-offcanvas-bar-content > .menu-mob-back {
+    justify-content: start;
+    background-color: transparent;
+    color: black;
+  }
+  .uk-offcanvas-bar-content > .menu-mob-back > span {
+    color: #A10E20;
+    padding-right: 10px;
+  }
 }
